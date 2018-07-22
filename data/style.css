@@ -1,0 +1,14 @@
+[id="imageclavier"] div button:hover,[id="imageclavier"] div button:focus
+{
+	border:3px solid transparent;
+}
+
+
+[id="imageclavier"] div button:active
+{
+	background-color:transparent;
+	border-top:3px solid transparent;
+}
+
+
+

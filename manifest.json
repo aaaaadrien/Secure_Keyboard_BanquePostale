@@ -1,0 +1,27 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "64": "data/icons/64.png"
+      }
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "include_globs": [ "https://*.labanquepostale.fr/*" ],
+      "js": [ "data/inject.js" ],
+      "matches": [ "https://*.labanquepostale.fr/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Permet de désactiver les effets de style sur le clavier virtuel de la Banque Postale",
+   "icons": {
+      "64": "data/icons/64.png"
+   },
+   "manifest_version": 2,
+   "name": "Secure Keyboard BanquePostale",
+   "permissions": [ "storage" ],
+   "version": "1.0.0",
+   "web_accessible_resources": [ "data/style.css" ]
+}
